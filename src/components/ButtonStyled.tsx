@@ -13,6 +13,10 @@ const ButtonStyled = styled.button`
   background-color: var(--main-color-button);
   font-family: var(--main-font);
 
+  :disabled {
+    opacity: var(--main-color-button-disabled);
+  }
+
   @media (min-width: 786px) {
     height: 57px;
     top: 979px;
