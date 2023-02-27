@@ -10,8 +10,8 @@ const ButtonStyled = styled.button`
   font-size: 20px;
   border: none;
   line-height: 31.48px;
-  background-color: #cccf18;
-  font-family: "Saira Stencil One", sans-serif;
+  background-color: var(--main-color-button);
+  font-family: var(--main-font);
 
   @media (min-width: 786px) {
     height: 57px;

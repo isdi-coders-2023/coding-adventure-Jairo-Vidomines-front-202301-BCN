@@ -1,3 +1,4 @@
+import "@fontsource/saira-stencil-one";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -10,19 +11,18 @@ const GlobalStyles = createGlobalStyle`
   text-decoration: none;
   }
 
-#root{
-  display:flex;
-  flex-direction: column;
-
-}
-
 body {
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color: var(--background-color);
   font-family: "Inter", sans-serif;
   width: 100%;
   min-height: 100vh;
-  
+}
+
+:root {
+  --main-color-button: #cccf18;
+  --main-font: "Saira Stencil One", sans-serif;
+  --background-color: #1e1e1e;
 }
 
 ol, ul, li {
