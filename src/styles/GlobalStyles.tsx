@@ -17,6 +17,7 @@ body {
   font-family: "Inter", sans-serif;
   width: 100%;
   min-height: 100vh;
+  color: #fff;
 }
 
 :root {
