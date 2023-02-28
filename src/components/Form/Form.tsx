@@ -5,11 +5,11 @@ const Form = (): JSX.Element => {
     <form autoComplete="off">
       <label>
         Email
-        <input type="text" placeholder="Introduce your email" />
+        <input type="email" placeholder="Introduce your email" />
       </label>
       <label>
-        Username
-        <input type="text" placeholder="Introduce your passsword" />
+        Password
+        <input type="password" placeholder="Introduce your passsword" />
       </label>
       <label>
         Image

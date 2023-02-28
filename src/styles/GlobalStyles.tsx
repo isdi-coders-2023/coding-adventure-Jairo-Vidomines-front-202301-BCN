@@ -2,6 +2,14 @@ import "@fontsource/saira-stencil-one";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+
+:root {
+  --main-color-button: #cccf18;
+  --main-color-button-disabled: 57%;
+  --main-font: "Saira Stencil One", sans-serif;
+  --background-color: #1e1e1e;
+}
+
 *, 
 *:after,
 *:before {
@@ -20,12 +28,6 @@ body {
   color: #fff;
 }
 
-:root {
-  --main-color-button: #cccf18;
-  --main-color-button-disabled: 57%;
-  --main-font: "Saira Stencil One", sans-serif;
-  --background-color: #1e1e1e;
-}
 
 ol, ul, li {
   list-style: none;
