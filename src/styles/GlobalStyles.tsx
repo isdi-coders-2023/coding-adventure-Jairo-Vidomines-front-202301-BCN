@@ -5,11 +5,11 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
 :root {
+  --background-color: #1e1e1e;
   --main-color-button: #cccf18;
   --main-color-button-disabled: 57%;
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Saira Stencil One", sans-serif;
-  --background-color: #1e1e1e;
 }
 
 *, 
