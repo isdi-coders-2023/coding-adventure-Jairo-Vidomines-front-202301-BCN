@@ -5,7 +5,7 @@ describe("Given a component Button", () => {
   describe("When it is rendered with the text 'Sign up'", () => {
     test("Then it should return a button with 'Sign up' text", () => {
       const buttonText = "Sign up";
-      render(<Button text={buttonText} />);
+      render(<Button text={buttonText} isDisabled={true} />);
 
       const buttonElement = screen.getByRole("button", { name: buttonText });
 
