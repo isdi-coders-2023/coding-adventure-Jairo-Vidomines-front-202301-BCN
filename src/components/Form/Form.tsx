@@ -1,22 +1,35 @@
 import Button from "../Button/Button";
+import FormStyled from "./FormStyled";
 
 const Form = (): JSX.Element => {
   return (
-    <form autoComplete="off">
-      <label>
+    <FormStyled className="form" autoComplete="off">
+      <label className="form__label">
         Email
-        <input type="email" placeholder="Introduce your email" />
+        <input
+          className="form__input"
+          type="email"
+          placeholder="Introduce your email"
+        />
       </label>
-      <label>
+      <label className="form__label">
         Password
-        <input type="password" placeholder="Introduce your passsword" />
+        <input
+          className="form__input"
+          type="password"
+          placeholder="Introduce your passsword"
+        />
       </label>
-      <label>
+      <label className="form__label">
         Image
-        <input type="file" placeholder="Introduce an image" />
+        <input
+          className="form__input"
+          type="file"
+          placeholder="Introduce an image"
+        />
       </label>
       <Button text="Sign up" />
-    </form>
+    </FormStyled>
   );
 };
 
