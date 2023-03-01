@@ -3,44 +3,40 @@ import Form from "./Form";
 
 describe("Given a Form component", () => {
   describe("When it is rendered", () => {
-    test("Then it should show a label with 'Email' text", () => {
+    test("Then it should show an input with label text: 'Email'", () => {
+      const expectResult = "Email";
+
       render(<Form />);
+      const result = screen.getByLabelText(expectResult);
 
-      const labelEmailText = "Email";
-
-      const labelText = screen.getByLabelText(labelEmailText);
-
-      expect(labelText).toBeInTheDocument();
+      expect(result).toBeInTheDocument();
     });
 
-    test("Then it should show a label with 'Password' text", () => {
+    test("Then it should show an input with label text: 'Password'", () => {
+      const expectResult = "Password";
+
       render(<Form />);
+      const result = screen.getByLabelText(expectResult);
 
-      const labelPasswordText = "Password";
-
-      const labelText = screen.getByLabelText(labelPasswordText);
-
-      expect(labelText).toBeInTheDocument();
+      expect(result).toBeInTheDocument();
     });
 
-    test("Then it should show a label with 'Image' text", () => {
+    test("Then it should show an input with label text: 'Image'", () => {
+      const expectResult = "Image";
+
       render(<Form />);
+      const result = screen.getByLabelText(expectResult);
 
-      const labelImageText = "Image";
-
-      const labelText = screen.getByLabelText(labelImageText);
-
-      expect(labelText).toBeInTheDocument();
+      expect(result).toBeInTheDocument();
     });
 
     test("Then it should show a button with the text 'Sign up'", () => {
+      const expectResult = "Sign up";
+
       render(<Form />);
+      const result = screen.getByRole("button", { name: expectResult });
 
-      const buttonText = "Sign up";
-
-      const buttonElement = screen.getByRole("button", { name: buttonText });
-
-      expect(buttonElement).toBeInTheDocument();
+      expect(result).toBeInTheDocument();
     });
   });
 });
