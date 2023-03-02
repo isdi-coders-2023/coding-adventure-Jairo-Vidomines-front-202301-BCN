@@ -29,6 +29,7 @@ const FormStyled = styled.form`
 
     .form {
       &__input {
+        height: 56px;
         width: 832.05px;
       }
     }

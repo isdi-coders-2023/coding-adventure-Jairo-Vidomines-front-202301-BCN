@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
 body {
-  padding: 20px;
+  padding: 18px;
   background-color: var(--background-color);
   font-family: "Inter", sans-serif;
   width: 100%;

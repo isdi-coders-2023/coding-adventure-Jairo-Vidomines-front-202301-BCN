@@ -31,6 +31,7 @@ const Form = (): JSX.Element => {
         <input
           className="form__input"
           type="email"
+          name="email"
           placeholder="Introduce your email"
           onChange={handleInputChange}
         />
@@ -40,6 +41,7 @@ const Form = (): JSX.Element => {
         <input
           className="form__input"
           type="password"
+          name="password"
           placeholder="Introduce your passsword"
           onChange={handleInputChange}
         />

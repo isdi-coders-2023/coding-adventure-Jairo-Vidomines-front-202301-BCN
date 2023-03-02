@@ -14,7 +14,7 @@ const ButtonStyled = styled.button`
     opacity: var(--main-color-button-disabled);
   }
 
-  @media (min-width: 786px) {
+  @media (min-width: 987px) {
     height: 57px;
   }
 `;
